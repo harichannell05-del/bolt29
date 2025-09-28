@@ -151,6 +151,13 @@ function TherapistDashboard() {
       color: 'from-orange-500 to-red-500',
       change: `$${monthlyRevenue.toLocaleString()} revenue`
     }
+    {
+      title: 'Patient Satisfaction',
+      value: '4.8/5',
+      icon: Star,
+      color: 'from-yellow-500 to-orange-500',
+      change: `Based on ${Math.max(1, weekSessions)} session${weekSessions !== 1 ? 's' : ''}`
+    }
   ];
 
   const quickActions = [
